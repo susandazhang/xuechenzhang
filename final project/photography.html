@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <title>Photography</title>
+    <link rel="stylesheet" href="stylefinal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Permanent+Marker&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <head>
+
+    <body>
+        <header>
+            <ul>
+                <li><a class="linkatt" href="susanfav.html">Susan's fav</a></li>
+                <li><a class='linkatt' href="photography.html">Photography</a></li>
+                <li><a class='linkatt' href="fashion.html">Fashion</a></li>
+                <li><a class='linkatt' href="index.html">Home</a></li>
+            </ul>
+        <h1>PHOTOGRAPHY</h1>
+        </header>
+        
+        <main>
+            <style>
+                * {
+                box-sizing: border-box;
+                }
+
+                .roww {
+                display: flex;
+                }
+
+                /* Create three equal columns that sits next to each other */
+                .columnn {
+                flex: 50% !important;
+                padding: 5px;
+                }
+
+                .container {
+                  position: relative;
+                  width: 100%;
+                }
+                
+                .image {
+                  opacity: 1;
+                  display: block;
+                  width: 100%;
+                  height: auto;
+                  transition: .5s ease;
+                  backface-visibility: hidden;
+                }
+                
+                .middle {
+                  transition: .5s ease;
+                  opacity: 0;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  text-align: center;
+                }
+                
+                .container:hover .image {
+                  opacity: 0.3;
+                }
+                
+                .container:hover .middle {
+                  opacity: 1;
+                }
+                
+                .text {
+                  background-color: #570d0d;
+                  color: white;
+                  font-size: 16px;
+                  padding: 16px 32px;
+                }
+
+                h1,p{
+                    text-align: center;
+                    color:rgba(63, 20, 5, 0.993)
+                }
+
+                p{
+                    font-family:'PT Serif', serif !important;
+                    font-size: 25px;
+                }
+
+                </style>
+                </head>
+                <body>
+                
+                <h2></h2>
+                <p>Collections from 3 cities that I‘ve lived in. Mostly shoot by my 35mm film camera: olympus u2; some by my phone and digital camera. Fun fact: the film camera has same age with me! It was originally owned by my dad, but I am her new owner now (woohoo!)</p>
+                
+                <!-- <div class="container">
+                  <img src="pinksky.jpg" alt="Avatar" class="image" style="width:100%">
+                  <div class="middle">
+                    <div class="text">New York</div>
+                  </div>
+                </div> -->
+
+                <div class="roww">
+                    <div class="columnn">
+                        <div class="container">
+                          <picture>
+                            <source media="(min-width:600px)" srcset="bkgnyx2.jpg">
+                            <img src="bkgny.jpg" alt="newyork" class="image" style="width:100%">
+                          </picture>
+                            
+                            <div class="middle">
+                              <div><a class="text" href="photony.html">New York</a></div>
+                            </div>
+                          </div>
+                    </div>
+
+
+                    <div class="columnn">
+                        <div class="container">
+                          <picture>
+                            <source media="(min-width:600px)" srcset="bkgshx2.jpg">
+                            <img src="bkgsh.jpg" alt="shanghai" class="image" style="width:100%">
+                          </picture>
+
+                            
+                            <div class="middle">
+                              <div><a class="text" href="photosh.html">Shanghai</a></div>
+                            </div>
+                          </div>
+                      </div>
+
+
+                    <div class="columnn">
+                        <div class="container">
+                          <picture>
+                            <source media="(min-width:600px)" srcset="bkgbjx2.jpg">
+                            <img src="bkgbj.jpg" alt="beijing" class="image" style="width:100%">
+                          </picture>
+                          
+
+                            <div class="middle">
+                              <div><a class="text" href="photobj.html">Beijing</a></div>
+                            </div>
+                          </div>
+                      
+                    </div>
+                </div>
+
+
+    
+        </main>
+    
+    
+        <h2></h2>
+        <p>
+        </p>
+    
+    </body>
+</html>
+    

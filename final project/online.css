@@ -1,0 +1,67 @@
+/* overall fonts and style */
+
+h1,h2,a,div{
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+
+
+/* for menu bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #570d0d;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color:blanchedalmond;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+
+/* for first page links */
+
+nav{
+    display: flex;
+    font-size: 5em;
+    justify-content: center;
+}
+
+nav > a {
+    margin-right: 1em;
+  }
+
+
+a:link,a:visited{
+    text-decoration: none;
+    color: azure;
+    display: inline-flex; /* keep the background color wrapped tight */
+    padding: 30px;
+    font-size:30px;
+    background-color:#570d0d;
+}
+
+div{
+    text-align: center;
+}
+
+nav{
+    display:inline-block
+}
