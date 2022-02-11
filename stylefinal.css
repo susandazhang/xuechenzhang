@@ -1,0 +1,124 @@
+/* overall fonts and style */
+
+h1,h2,a,div,p{
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Permanent Marker', cursive;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+}
+
+
+
+/* for menu bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #570d0d;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color:blanchedalmond;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+
+/* for first page links */
+
+nav{
+    display: flex;
+    font-size: 5em;
+    justify-content: center;
+}
+
+nav > a {
+    margin-right: 1em;
+  }
+
+
+a:link,a:visited,a:active{
+    text-decoration: none;
+    color: azure;
+    display: inline-flex; /* keep the background color wrapped tight */
+    padding: 30px;
+    font-size:28px;
+    background-color:#570d0d;
+}
+
+div{
+    text-align: center;
+}
+
+nav{
+    display:inline-block
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 6px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 880px) {
+    .column, .columnn {
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    a:link,a:visited,a:active{
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    p{
+        font-size:20px !important;
+    }
+
+    h1{
+        font-size:35px !important;
+    }
+
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, .columnn {
+      flex: 100%;
+      max-width: 100%;
+    }
+    a:link,a:visited,a:active{
+        font-size: 20px;
+        padding: 8px;
+    }
+  }
